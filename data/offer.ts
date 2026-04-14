@@ -25,9 +25,9 @@ export const sections: OfferSection[] = [
       { lp: 2,  name: 'Telewizor Sony BRAVIA XR-75Z9J (75", 8K Full Array LED)', qty: 1,  unit: "szt.", price: 13000 },
       { lp: 3,  name: 'Monitor Sony FW-55BZ40L (55", profesjonalny)',             qty: 1,  unit: "szt.", price: 4160 },
       { lp: 4,  name: 'Monitor Sony FW-50BZ30L (50", profesjonalny)',             qty: 1,  unit: "szt.", price: 3440 },
-      { lp: 5,  name: 'Monitor Sony FW-43BZ30L (43")',                            qty: 7,  unit: "szt.", price: 2880 },
+      { lp: 5,  name: 'Monitor Sony FW-43BZ30L (43")',                            qty: 7,  unit: "szt.", price: 1800 },
       { lp: 6,  name: 'Monitor Sony FW-43BZ20L (43")',                            qty: 1,  unit: "szt.", price: 2000 },
-      { lp: 7,  name: 'Monitor Sony FW-32BZ30J1 (32", profesjonalny)',            qty: 2,  unit: "szt.", price: 2440 },
+      { lp: 7,  name: 'Monitor Sony FW-32BZ30J1 (32", profesjonalny)',            qty: 2,  unit: "szt.", price: 1500 },
     ],
   },
   {
