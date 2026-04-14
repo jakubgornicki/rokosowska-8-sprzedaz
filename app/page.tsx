@@ -1,23 +1,11 @@
 "use client";
 
-import { sections, offerDate, OfferItem } from "@/data/offer";
+import { sections, offerDate } from "@/data/offer";
 
 function fmt(price: number | null): { text: string; isNull: boolean } {
   if (price === null) return { text: "na zapytanie", isNull: true };
   return {
     text: price.toLocaleString("pl-PL", {
-      minimumFractionDigits: 2,
-      maximumFractionDigits: 2,
-    }) + " PLN",
-    isNull: false,
-  };
-}
-
-function total(item: OfferItem): { text: string; isNull: boolean } {
-  if (item.price === null) return { text: "—", isNull: true };
-  const val = item.price * item.qty;
-  return {
-    text: val.toLocaleString("pl-PL", {
       minimumFractionDigits: 2,
       maximumFractionDigits: 2,
     }) + " PLN",
@@ -98,12 +86,6 @@ export default function Home() {
                 >
                   Cena / szt.
                 </th>
-                <th
-                  className="text-right font-semibold text-xs uppercase tracking-wider py-2.5 px-3 whitespace-nowrap"
-                  style={{ width: 150 }}
-                >
-                  Wartość łącznie
-                </th>
               </tr>
             </thead>
             <tbody>
@@ -112,7 +94,7 @@ export default function Home() {
                   {/* Section header */}
                   <tr key={`sec-${section.title}`} className="section-header">
                     <td
-                      colSpan={6}
+                      colSpan={5}
                       className="py-2 px-3 text-xs font-bold text-white uppercase tracking-widest"
                       style={{ background: section.color }}
                     >
@@ -124,7 +106,6 @@ export default function Home() {
                   {/* Items */}
                   {section.items.map((item, idx) => {
                     const priceF = fmt(item.price);
-                    const totalF = total(item);
                     const isEven = idx % 2 === 0;
 
                     return (
@@ -165,40 +146,19 @@ export default function Home() {
                           {item.unit}
                         </td>
                         <td
-                          className="py-2 px-3 text-right border-b whitespace-nowrap"
-                          style={{
-                            borderColor: "#e8eaf0",
-                            fontVariantNumeric: "tabular-nums",
-                          }}
-                        >
-                          {priceF.isNull ? (
-                            <span
-                              style={{
-                                color: "#bbb",
-                                fontStyle: "italic",
-                                fontSize: 11,
-                              }}
-                            >
-                              {priceF.text}
-                            </span>
-                          ) : (
-                            priceF.text
-                          )}
-                        </td>
-                        <td
                           className="py-2 px-3 text-right border-b whitespace-nowrap font-semibold"
                           style={{
                             borderColor: "#e8eaf0",
                             fontVariantNumeric: "tabular-nums",
-                            color: totalF.isNull ? "#bbb" : "#0d4f8b",
+                            color: priceF.isNull ? "#bbb" : "#0d4f8b",
                           }}
                         >
-                          {totalF.isNull ? (
+                          {priceF.isNull ? (
                             <span style={{ fontStyle: "italic", fontSize: 11 }}>
-                              {totalF.text}
+                              {priceF.text}
                             </span>
                           ) : (
-                            totalF.text
+                            priceF.text
                           )}
                         </td>
                       </tr>
