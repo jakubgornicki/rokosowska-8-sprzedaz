@@ -45,10 +45,10 @@ export const sections: OfferSection[] = [
     color: "#094060",
     items: [
       { lp: 10, name: "Amplituner Onkyo TX-RZ70 BK",                                    qty: 1,  unit: "szt.", price: 9600 },
-      { lp: 11, name: "Głośnik instalacyjny Focal 300 IW LCR6 (ścienny)",               qty: 3,  unit: "szt.", price: 3839.20 },
+      { lp: 11, name: "Głośnik instalacyjny Focal 300 IW LCR6 (ścienny)",               qty: 3,  unit: "szt.", price: 3263.32 },
       { lp: 12, name: "Subwoofer Klipsch RP-1400SW",                                    qty: 2,  unit: "szt.", price: 3039.20 },
-      { lp: 13, name: "Głośnik instalacyjny Focal 300 IW6 (ścienny)",                   qty: 4,  unit: "szt.", price: 2079.20 },
-      { lp: 14, name: "Głośnik instalacyjny Focal 300 ICW 6 (sufitowy)",                qty: 4,  unit: "szt.", price: 1679.20 },
+      { lp: 13, name: "Głośnik instalacyjny Focal 300 IW6 (ścienny)",                   qty: 4,  unit: "szt.", price: 1767.32 },
+      { lp: 14, name: "Głośnik instalacyjny Focal 300 ICW 6 (sufitowy)",                qty: 4,  unit: "szt.", price: 1427.32 },
       { lp: 15, name: "Rode Wireless GO II (bezprzewodowy zestaw mikrofonowy)",          qty: 1,  unit: "szt.", price: 766.40 },
       { lp: 16, name: "Rode PodMic USB (mikrofon dynamiczny broadcast)",                 qty: 1,  unit: "szt.", price: 638.40 },
       { lp: 17, name: "Statyw mikrofonowy Dynawid SM-3200",                              qty: 2,  unit: "szt.", price: 295.20 },
