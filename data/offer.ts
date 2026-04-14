@@ -26,7 +26,7 @@ export const sections: OfferSection[] = [
       { lp: 3,  name: 'Monitor Sony FW-55BZ40L (55", profesjonalny)',             qty: 1,  unit: "szt.", price: 4160 },
       { lp: 4,  name: 'Monitor Sony FW-50BZ30L (50", profesjonalny)',             qty: 1,  unit: "szt.", price: 3440 },
       { lp: 5,  name: 'Monitor Sony FW-43BZ30L (43")',                            qty: 7,  unit: "szt.", price: 1800 },
-      { lp: 6,  name: 'Monitor Sony FW-43BZ20L (43")',                            qty: 1,  unit: "szt.", price: 2000 },
+      { lp: 6,  name: 'Monitor Sony FW-43BZ20L (43")',                            qty: 1,  unit: "szt.", price: 1800 },
       { lp: 7,  name: 'Monitor Sony FW-32BZ30J1 (32", profesjonalny)',            qty: 2,  unit: "szt.", price: 1500 },
     ],
   },
@@ -35,8 +35,8 @@ export const sections: OfferSection[] = [
     title: "Kamery / Kontrolery PTZ",
     color: "#0A3F70",
     items: [
-      { lp: 8,  name: "Kamera Sony SRG-A40BC (PTZ, 4K, AI Framing)",      qty: 3, unit: "szt.", price: 15324.80 },
-      { lp: 9,  name: "Kontroler Sony RM-IP500/ACM (PTZ Advanced)",        qty: 1, unit: "szt.", price: 12720 },
+      { lp: 8,  name: "Kamera Sony SRG-A40BC (PTZ, 4K, AI Framing)",      qty: 3, unit: "szt.", price: 13000 },
+      { lp: 9,  name: "Kontroler Sony RM-IP500/ACM (PTZ Advanced)",        qty: 1, unit: "szt.", price: 11000 },
     ],
   },
   {
