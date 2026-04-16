@@ -13,7 +13,7 @@ export interface OfferSection {
   items: OfferItem[];
 }
 
-export const offerDate = "14.04.2026";
+export const offerDate = "16.04.2026";
 
 export const sections: OfferSection[] = [
   {
@@ -103,6 +103,14 @@ export const sections: OfferSection[] = [
     ],
   },
   {
+    icon: "☕",
+    title: "AGD / Kuchnia",
+    color: "#0A3F70",
+    items: [
+      { lp: 52, name: "Moccamaster KBG 744 AO Black (ekspres przelewowy, 1,25 l)", qty: 1, unit: "szt.", price: 1800 },
+    ],
+  },
+  {
     icon: "🪑",
     title: "Meble",
     color: "#0D4F8B",
@@ -114,6 +122,80 @@ export const sections: OfferSection[] = [
       { lp: 49, name: "IKEA KALLAX regał 182×182 cm czarnobrązowy (5×5)",                 qty: 1,  unit: "szt.", price: 639.20 },
       { lp: 50, name: "Hoker barowy ASTER welurowy miedziany, regulowany",                qty: 4,  unit: "szt.", price: 265 },
       { lp: 51, name: "Puf welurowy WISCONSIN 36×36×39 cm (fioletowy)",                   qty: 4,  unit: "szt.", price: 145 },
+    ],
+  },
+  {
+    icon: "🌐",
+    title: "Sieć / Networking",
+    color: "#0D4F8B",
+    items: [
+      { lp: 53, name: "Cudy GS1010PE switch gigabit 10-port PoE+ 120W",           qty: 1, unit: "szt.", price: 186 },
+      { lp: 54, name: "TP-Link LS109P switch 9-port Fast Ethernet PoE+",           qty: 1, unit: "szt.", price: 95 },
+      { lp: 55, name: "Netgear GS108GE switch gigabit 8-port ProSAFE",             qty: 1, unit: "szt.", price: 98 },
+      { lp: 56, name: "ZyXEL NR7102-EU01V1F Outdoor 5G CPE",                      qty: 1, unit: "szt.", price: 760 },
+    ],
+  },
+  {
+    icon: "🎥",
+    title: "Kamery / Monitoring (dodatkowe)",
+    color: "#0A3F70",
+    items: [
+      { lp: 57, name: "Reolink Junction Box D20 — puszka montażowa do kamer",      qty: 5, unit: "szt.", price: 95 },
+      { lp: 58, name: "Insta360 X3 — kamera 360°",                                 qty: 1, unit: "szt.", price: 1150 },
+    ],
+  },
+  {
+    icon: "🎵",
+    title: "Audio (dodatkowe)",
+    color: "#094060",
+    items: [
+      { lp: 59, name: "Ambient Recording ASF-2 MKII — hydrophone / mikrofon podwodny", qty: 1, unit: "szt.", price: 1600 },
+      { lp: 60, name: "WiiM Pro Plus — sieciowy odtwarzacz audio / streamer",           qty: 1, unit: "szt.", price: 880 },
+      { lp: 61, name: "Equation D008A 30L — aktywny głośnik studyjny",                  qty: 1, unit: "szt.", price: 560 },
+      { lp: 62, name: "Power Dynamics NCSS8 — 8-kanałowy splitter sygnału audio",       qty: 1, unit: "szt.", price: 160 },
+      { lp: 63, name: "Zoom XYH-6 Mid-Side Stereo Microphone Capsule",                  qty: 1, unit: "szt.", price: 480 },
+    ],
+  },
+  {
+    icon: "💡",
+    title: "Smart Home",
+    color: "#0A3F70",
+    items: [
+      { lp: 64, name: "Philips Hue Play HDMI Sync Box 4K",                         qty: 1, unit: "szt.", price: 799 },
+    ],
+  },
+  {
+    icon: "🖥️",
+    title: "Monitory (dodatkowe)",
+    color: "#0D4F8B",
+    items: [
+      { lp: 65, name: 'Lenovo T2054PC (20", LCD IPS 16:10, HDMI)',                 qty: 2, unit: "szt.", price: 259 },
+    ],
+  },
+  {
+    icon: "📸",
+    title: "Foto / Akcesoria",
+    color: "#0A3F70",
+    items: [
+      { lp: 66, name: "Peak Design Capture Clip v3 — uchwyt do paska/plecaka",     qty: 1, unit: "szt.", price: 159 },
+    ],
+  },
+  {
+    icon: "⌨️",
+    title: "Komputery / Akcesoria (dodatkowe)",
+    color: "#0B4880",
+    items: [
+      { lp: 67, name: "Klawiatura TRACER Reef — bezprzewodowa z touchpadem",        qty: 1, unit: "szt.", price: 25 },
+      { lp: 68, name: "PureMounts PDS-6001 — uchwyt biurkowy do tabletu / iPad",   qty: 1, unit: "szt.", price: 99 },
+    ],
+  },
+  {
+    icon: "🪑",
+    title: "Meble (dodatkowe)",
+    color: "#0D4F8B",
+    items: [
+      { lp: 69, name: "IKEA FABRIKÖR — witryna szklana 57×150 cm",                 qty: 1, unit: "szt.", price: 560 },
+      { lp: 70, name: "Stół konferencyjny biały 180×90 cm (zarządzanie kablami, nogi dębowe)", qty: 1, unit: "szt.", price: 800 },
     ],
   },
 ];
