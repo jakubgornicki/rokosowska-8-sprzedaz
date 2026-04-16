@@ -6,6 +6,13 @@ const compat = new FlatCompat({
 
 const eslintConfig = [
   ...compat.extends("next/core-web-vitals", "next/typescript"),
+  {
+    rules: {
+      // We serve images from DO Spaces and use static export; next/image
+      // optimizer is not applicable, so plain <img> is intentional.
+      "@next/next/no-img-element": "off",
+    },
+  },
 ];
 
 export default eslintConfig;

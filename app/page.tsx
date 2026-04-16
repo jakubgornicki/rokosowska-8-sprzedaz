@@ -1,186 +1,145 @@
-"use client";
-
-import { sections, offerDate } from "@/data/offer";
-
-function fmt(price: number | null): { text: string; isNull: boolean } {
-  if (price === null) return { text: "na zapytanie", isNull: true };
-  return {
-    text: price.toLocaleString("pl-PL", {
-      minimumFractionDigits: 2,
-      maximumFractionDigits: 2,
-    }) + " PLN",
-    isNull: false,
-  };
-}
+import { sections, allItems, contactEmail, location } from "@/data/offer";
+import ItemCard from "@/app/components/ItemCard";
+import SearchFilter from "@/app/components/SearchFilter";
 
 export default function Home() {
+  const totalItems = allItems.length;
+  const totalPhotos = allItems.reduce((n, i) => n + i.photos.length, 0);
+  const totalOlx = allItems.filter((i) => i.liveOnOlx).length;
+
   return (
-    <div className="min-h-screen" style={{ background: "#f0f2f5" }}>
-      <div
-        className="page-container max-w-4xl mx-auto my-8 bg-white overflow-hidden"
-        style={{ borderRadius: 8, boxShadow: "0 4px 24px rgba(0,0,0,.12)" }}
+    <div className="min-h-screen bg-slate-50">
+      {/* Hero */}
+      <header
+        className="relative overflow-hidden text-white px-9 pt-10 pb-7"
+        style={{
+          background:
+            "linear-gradient(135deg, #0a1f3d 0%, #0f3460 60%, #0d4f8b 100%)",
+        }}
       >
-        {/* Header */}
-        <header
-          style={{ background: "#1a1a2e" }}
-          className="px-9 pt-7 pb-5 text-white"
-        >
-          <h1 className="text-xl font-bold tracking-wide">
-            OFERTA SPRZEDAŻY SPRZĘTU
-          </h1>
-          <p className="text-xs mt-1.5" style={{ color: "#aaa" }}>
-            Data oferty: {offerDate}&nbsp;&nbsp;|&nbsp;&nbsp;Ceny brutto (z
-            VAT)&nbsp;&nbsp;|&nbsp;&nbsp;Możliwość negocjacji
-          </p>
-        </header>
-
-        {/* Toolbar */}
         <div
-          className="no-print px-9 py-2.5 flex gap-3"
-          style={{ background: "#16213e" }}
-        >
-          <button
-            onClick={() => window.print()}
-            className="text-white text-xs px-4 py-1.5 rounded cursor-pointer border-0"
-            style={{ background: "#0f3460" }}
-            onMouseEnter={(e) =>
-              ((e.target as HTMLElement).style.background = "#1a5276")
-            }
-            onMouseLeave={(e) =>
-              ((e.target as HTMLElement).style.background = "#0f3460")
-            }
+          aria-hidden
+          className="absolute -top-1/2 -right-1/5 w-[600px] h-[600px] pointer-events-none"
+          style={{
+            background:
+              "radial-gradient(circle, rgba(59,130,246,.18) 0%, transparent 70%)",
+          }}
+        />
+        <div className="max-w-6xl mx-auto relative z-10">
+          <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight leading-tight mb-2">
+            Sprzedaż sprzętu eventowego i biurowego
+          </h1>
+          <p className="text-slate-300 max-w-3xl leading-relaxed">
+            Kompletne wyposażenie sali eventowej/konferencyjnej do odbioru w{" "}
+            {location}: profesjonalne wyświetlacze Sony, kamery PTZ, nagłośnienie
+            Focal/Klipsch, infrastruktura IT, meble. Wszystko sprawne, większość
+            z fakturą VAT.
+          </p>
+          <div className="flex gap-5 mt-5 flex-wrap">
+            <div className="bg-white/10 backdrop-blur border border-white/10 rounded-lg px-4 py-2.5">
+              <div className="text-2xl font-bold">{totalItems}</div>
+              <div className="text-[11px] text-slate-300 tracking-wider uppercase">
+                Pozycji
+              </div>
+            </div>
+            <div className="bg-white/10 backdrop-blur border border-white/10 rounded-lg px-4 py-2.5">
+              <div className="text-2xl font-bold">{totalPhotos}</div>
+              <div className="text-[11px] text-slate-300 tracking-wider uppercase">
+                Zdjęć produktowych
+              </div>
+            </div>
+            <div className="bg-white/10 backdrop-blur border border-white/10 rounded-lg px-4 py-2.5">
+              <div className="text-2xl font-bold">{totalOlx}</div>
+              <div className="text-[11px] text-slate-300 tracking-wider uppercase">
+                Aktywne na OLX
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      {/* Sticky nav */}
+      <nav className="sticky top-0 z-20 bg-white shadow-sm overflow-x-auto">
+        <div className="max-w-6xl mx-auto px-4 py-3 flex gap-1 items-center">
+          {sections.map((s) => (
+            <a
+              key={s.id}
+              href={`#${s.id}`}
+              className="px-3 py-1.5 text-[11px] md:text-xs font-semibold text-slate-600 hover:bg-slate-100 hover:text-slate-900 rounded whitespace-nowrap"
+            >
+              {s.icon} {s.title}
+            </a>
+          ))}
+          <a
+            href={`mailto:${contactEmail}?subject=Oferta%20sprzeda%C5%BCy`}
+            className="ml-auto bg-emerald-600 text-white px-3 py-1.5 rounded text-xs font-semibold hover:bg-emerald-700 whitespace-nowrap"
           >
-            🖨 Drukuj / Zapisz PDF
-          </button>
+            ✉ Kontakt
+          </a>
+        </div>
+      </nav>
+
+      <main className="max-w-6xl mx-auto px-4 md:px-9 py-6 pb-12">
+        {/* Bulk banner */}
+        <div className="bg-white border-2 border-dashed border-amber-500 rounded-xl px-5 py-4 mb-6 flex gap-4 items-center flex-wrap">
+          <span className="text-3xl">🎁</span>
+          <div className="flex-1 min-w-[260px]">
+            <h3 className="text-amber-900 font-semibold text-sm mb-1">
+              Rabat przy zakupie pakietowym
+            </h3>
+            <p className="text-amber-900/80 text-sm">
+              Zainteresowany kilkoma pozycjami? Napisz — wyślemy indywidualną
+              wycenę z rabatem. Możliwy odbiór całości jednego dnia.
+            </p>
+          </div>
+          <a
+            href={`mailto:${contactEmail}?subject=Zapytanie%20pakietowe&body=Interesuj%C4%85%20mnie%20pozycje:%20`}
+            className="bg-amber-500 hover:bg-amber-600 text-white font-bold px-4 py-2.5 rounded text-sm whitespace-nowrap"
+          >
+            Wyceń pakiet
+          </a>
         </div>
 
-        {/* Table */}
-        <div className="overflow-x-auto">
-          <table className="w-full border-collapse text-sm">
-            <thead>
-              <tr style={{ background: "#0f3460", color: "#fff" }}>
-                <th
-                  className="text-left font-semibold text-xs uppercase tracking-wider py-2.5 px-3"
-                  style={{ width: 40 }}
-                >
-                  Lp.
-                </th>
-                <th className="text-left font-semibold text-xs uppercase tracking-wider py-2.5 px-3">
-                  Nazwa / Model
-                </th>
-                <th
-                  className="text-right font-semibold text-xs uppercase tracking-wider py-2.5 px-3 whitespace-nowrap"
-                  style={{ width: 60 }}
-                >
-                  Ilość
-                </th>
-                <th
-                  className="text-right font-semibold text-xs uppercase tracking-wider py-2.5 px-3 whitespace-nowrap"
-                  style={{ width: 50 }}
-                >
-                  J.m.
-                </th>
-                <th
-                  className="text-right font-semibold text-xs uppercase tracking-wider py-2.5 px-3 whitespace-nowrap"
-                  style={{ width: 150 }}
-                >
-                  Cena / szt.
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              {sections.map((section) => (
-                <>
-                  {/* Section header */}
-                  <tr key={`sec-${section.title}`} className="section-header">
-                    <td
-                      colSpan={5}
-                      className="py-2 px-3 text-xs font-bold text-white uppercase tracking-widest"
-                      style={{ background: section.color }}
-                    >
-                      <span className="mr-1.5">{section.icon}</span>
-                      {section.title}
-                    </td>
-                  </tr>
+        <div className="mb-5">
+          <SearchFilter totalItems={totalItems} />
+        </div>
 
-                  {/* Items */}
-                  {section.items.map((item, idx) => {
-                    const priceF = fmt(item.price);
-                    const isEven = idx % 2 === 0;
-
-                    return (
-                      <tr
-                        key={item.lp}
-                        style={{ background: isEven ? "#fff" : "#f5f7fb" }}
-                        className="hover:bg-blue-50 transition-colors"
-                      >
-                        <td
-                          className="py-2 px-3 text-center text-xs border-b"
-                          style={{
-                            color: "#999",
-                            borderColor: "#e8eaf0",
-                            width: 40,
-                          }}
-                        >
-                          {item.lp}
-                        </td>
-                        <td
-                          className="py-2 px-3 border-b leading-snug"
-                          style={{
-                            borderColor: "#e8eaf0",
-                            maxWidth: 360,
-                          }}
-                        >
-                          {item.name}
-                        </td>
-                        <td
-                          className="py-2 px-3 text-center border-b"
-                          style={{ color: "#444", borderColor: "#e8eaf0" }}
-                        >
-                          {item.qty}
-                        </td>
-                        <td
-                          className="py-2 px-3 text-center border-b"
-                          style={{ color: "#444", borderColor: "#e8eaf0" }}
-                        >
-                          {item.unit}
-                        </td>
-                        <td
-                          className="py-2 px-3 text-right border-b whitespace-nowrap font-semibold"
-                          style={{
-                            borderColor: "#e8eaf0",
-                            fontVariantNumeric: "tabular-nums",
-                            color: priceF.isNull ? "#bbb" : "#0d4f8b",
-                          }}
-                        >
-                          {priceF.isNull ? (
-                            <span style={{ fontStyle: "italic", fontSize: 11 }}>
-                              {priceF.text}
-                            </span>
-                          ) : (
-                            priceF.text
-                          )}
-                        </td>
-                      </tr>
-                    );
-                  })}
-                </>
+        {sections.map((section) => (
+          <section
+            key={section.id}
+            id={section.id}
+            data-section
+            className="mt-9 scroll-mt-20"
+          >
+            <h2 className="text-xl font-bold text-slate-900 flex items-center gap-2.5 mb-1">
+              <span>{section.icon}</span>
+              <span>{section.title}</span>
+            </h2>
+            <div className="text-[11px] uppercase tracking-wider text-slate-500 mb-4">
+              {section.items.length} pozycji w kategorii
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+              {section.items.map((item) => (
+                <ItemCard key={item.slug} item={item} />
               ))}
-            </tbody>
-          </table>
-        </div>
+            </div>
+          </section>
+        ))}
+      </main>
 
-        {/* Footer */}
-        <footer
-          className="px-9 py-4 text-xs border-t"
-          style={{ background: "#f5f7fb", color: "#777", borderColor: "#e0e3ea" }}
+      <footer className="text-center py-7 px-4 text-xs text-slate-500 leading-relaxed">
+        Kontakt:{" "}
+        <a
+          href={`mailto:${contactEmail}`}
+          className="text-blue-700 hover:underline"
         >
-          Kontakt: jakub.gornicki@gmail.com&nbsp;&nbsp;·&nbsp;&nbsp;Wszystkie
-          ceny brutto z VAT&nbsp;&nbsp;·&nbsp;&nbsp;Możliwy rabat przy zakupie
-          kilku pozycji jednocześnie&nbsp;&nbsp;·&nbsp;&nbsp;Pozycje &ldquo;na
-          zapytanie&rdquo; wymagają indywidualnej wyceny
-        </footer>
-      </div>
+          {contactEmail}
+        </a>
+        {" "}· Wszystkie ceny brutto (z VAT) · Możliwa negocjacja przy zakupie
+        kilku pozycji
+        <br />
+        Odbiór osobisty {location} · Wysyłka wg indywidualnych ustaleń
+      </footer>
     </div>
   );
 }
