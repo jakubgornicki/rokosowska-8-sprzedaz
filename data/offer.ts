@@ -52,9 +52,9 @@ export const sections: OfferSection[] = [
       price: 19200,
       category: "Elektronika → Telewizory i Monitory → Telewizory",
       hasInvoice: false,
-      liveOnOlx: false,
-      olxUrl: null,
-      photos: [],
+      liveOnOlx: true,
+      olxUrl: "https://www.olx.pl/d/oferta/telewizor-sony-bravia-xr-75z9j-75-8k-hdr-google-tv-sprawny-CID99-ID1afCml.html",
+      photos: ["https://outriders.fra1.digitaloceanspaces.com/roko8/sony-xr-75z9j/A1163EBD-819F-402D-8978-17CF4EC1F8E1.JPG", "https://outriders.fra1.digitaloceanspaces.com/roko8/sony-xr-75z9j/Screenshot%202026-04-17%20at%2009.26.24.png", "https://outriders.fra1.digitaloceanspaces.com/roko8/sony-xr-75z9j/Screenshot%202026-04-17%20at%2009.26.32.png", "https://outriders.fra1.digitaloceanspaces.com/roko8/sony-xr-75z9j/Screenshot%202026-04-17%20at%2009.26.40.png", "https://outriders.fra1.digitaloceanspaces.com/roko8/sony-xr-75z9j/Screenshot%202026-04-17%20at%2009.26.49.png"],
       descriptionMd: "Sprzedam telewizor Sony BRAVIA XR-75Z9J 75\" 8K. Sprawny, w bardzo dobrym stanie.\n\n**Model:** Sony BRAVIA XR XR-75Z9J (Master Series Z9J)\n**Przekątna:** 75\" (189 cm)\n**Rozdzielczość:** 8K Ultra HD (7680×4320)\n**Matryca:** Full Array LED z XR Contrast Booster 15\n**Procesor:** Cognitive Processor XR\n**System:** Google TV (Android)\n**HDR:** Dolby Vision, HDR10, HLG\n**Dźwięk:** Dolby Atmos, Acoustic Multi-Audio\n**HDMI:** 4× HDMI (w tym HDMI 2.1), 3× USB\n**Wi-Fi / Ethernet:** tak\n**Odświeżanie:** 120 Hz natywne\n**Asystenci:** Google Assistant, Amazon Alexa, Apple AirPlay 2, Chromecast\n**Stan:** używany, b. dobry — sprawny\n\nJeden z flagowych telewizorów Sony serii Master Series. Technologia XR 8K Upscaling pozwala cieszyć się obrazem 8K z treści niższej rozdzielczości.\n\nOdbiór osobisty w Warszawie (Wola/Śródmieście). Wysyłka możliwa po uzgodnieniu (duży gabaryt).",
     },
     {
