@@ -202,7 +202,7 @@ export const sections: OfferSection[] = [
       hasInvoice: true,
       liveOnOlx: false,
       olxUrl: null,
-      photos: [],
+      photos: ["https://outriders.fra1.digitaloceanspaces.com/roko8/klipsch-rp-1400sw/IMG_9111.jpeg", "https://outriders.fra1.digitaloceanspaces.com/roko8/klipsch-rp-1400sw/IMG_9112.jpeg", "https://outriders.fra1.digitaloceanspaces.com/roko8/klipsch-rp-1400sw/IMG_9113.jpeg", "https://outriders.fra1.digitaloceanspaces.com/roko8/klipsch-rp-1400sw/IMG_9114.jpeg", "https://outriders.fra1.digitaloceanspaces.com/roko8/klipsch-rp-1400sw/IMG_9115.jpeg", "https://outriders.fra1.digitaloceanspaces.com/roko8/klipsch-rp-1400sw/IMG_9116.jpeg", "https://outriders.fra1.digitaloceanspaces.com/roko8/klipsch-rp-1400sw/IMG_9117.jpeg"],
       descriptionMd: "Sprzedam aktywny subwoofer Klipsch RP-1400SW z serii Reference Premiere. Sprawny, b. dobry stan. Zakup z fakturą VAT. Dostępne 2 sztuki.\n\n**Model:** Klipsch Reference Premiere RP-1400SW\n**Głośnik:** 14\" (35 cm) Cerametallic woofer\n**Typ:** aktywny (wbudowany wzmacniacz)\n**Ilość:** 2 sztuki\n**Stan:** używany, b. dobry — sprawny\n\n**Specyfikacja techniczna:**\n– Woofer: 14\" Cerametallic (aluminium + ceramika)\n– Moc wzmacniacza: 500 W peak (250 W RMS)\n– Pasmo: 18 Hz – 125 Hz (-3 dB)\n– SPL max: 116 dB\n– Obudowa: Sealed (zamknięta) — dokładny i szybki bas\n– Wejścia: XLR (balansowane) + RCA L/R\n– Regulacja: poziom, crossover (40–80 Hz), faza (0/180°)\n– EQ: Room Correction + Subwoofer Polarity\n– Pilot IR w zestawie\n– Kolor: czarny, wykończenie drewno (brushed black polymer veneer)\n– Wymiary: 44,5 × 45,7 × 49,5 cm, waga: ~25 kg\n\nOdbiór osobisty w Warszawie (Wola/Śródmieście). Wysyłka możliwa kurierem (duże gabaryty).",
     },
     {
@@ -478,6 +478,18 @@ export const sections: OfferSection[] = [
       descriptionMd: "Sprzedam zewnętrzny router 5G ZyXEL NR7102. Sprawny, w dobrym stanie. Obudowa zewnętrzna IP65, zasilanie PoE.\n\n**Model:** ZyXEL NR7102-EU01V1F\n**Stan:** używany, b. dobry — sprawny\n\n**Specyfikacja techniczna:**\n– Zewnętrzny router 5G NR (Sub-6GHz) + 4G LTE (backward compatible)\n– Przepustowość: do 2,5 Gb/s (5G downlink)\n– Gniazdo SIM (1× SIM)\n– Łączność do wewnątrz: 1× RJ-45 Ethernet 2.5 Gb/s\n– Zasilanie: PoE (Power over Ethernet)\n– Obudowa: szczelna IP65, biała, montaż ścienny/masztowy\n– Pracuje w zakresach: n1/n3/n28/n41/n78 (5G), B1/B3/B7/B8/B20/B28/B38 (4G)\n\nIdealny do budynków bez kabla światłowodowego, tarasów, parkingów, obiektów eventowych.\n\nOdbiór osobisty w Warszawie (Wola/Śródmieście). Wysyłka możliwa (ostrożnie).",
     },
     {
+      slug: "asus-lyra-trio",
+      name: "ASUS Lyra Trio 2-pack Mesh WiFi AC1750",
+      qty: 1,
+      price: 250,
+      category: "Elektronika → Komputery → Sieci i Wi-Fi",
+      hasInvoice: false,
+      liveOnOlx: false,
+      olxUrl: null,
+      photos: ["https://outriders.fra1.digitaloceanspaces.com/roko8/asus-lyra-trio/IMG_3990.jpeg", "https://outriders.fra1.digitaloceanspaces.com/roko8/asus-lyra-trio/IMG_3991.jpeg", "https://outriders.fra1.digitaloceanspaces.com/roko8/asus-lyra-trio/IMG_3992.jpeg"],
+      descriptionMd: "Sprzedam system Mesh WiFi ASUS Lyra Trio — zestaw 2 nody (stacje). Sprawny, w bardzo dobrym stanie.\n\n**Model:** ASUS Lyra Trio (AC1750)\n**Zawartość:** 2× noda Lyra Trio\n**Stan:** używany, b. dobry — sprawny\n\n**Specyfikacja techniczna:**\n– Standard: WiFi 5 (802.11ac), Tri-Band AC1750\n– Pasma: 2.4 GHz (450 Mbps) + 5 GHz (867 Mbps) + 5 GHz (433 Mbps)\n– Zasięg Mesh: do 300 m² (2 nody)\n– Porty: 1× Gigabit WAN + 1× Gigabit LAN na każdą nodę\n– Zabezpieczenia: AiProtection (Trend Micro), kontrola rodzicielska\n– Konfiguracja: aplikacja ASUS Router (Android/iOS)\n– Design: kompaktowy, biały, ładny do wnętrza\n\nOdbiór osobisty w Warszawie (Wola/Śródmieście). Wysyłka możliwa.",
+    },
+    {
       slug: "lenovo-monitor",
       name: "Lenovo ThinkVision T2054PC 20\" LCD IPS HDMI",
       qty: 2,
@@ -614,7 +626,7 @@ export const sections: OfferSection[] = [
       hasInvoice: false,
       liveOnOlx: false,
       olxUrl: null,
-      photos: ["https://outriders.fra1.digitaloceanspaces.com/roko8/peak-design-stand-wallet/IMG_3975.jpeg", "https://outriders.fra1.digitaloceanspaces.com/roko8/peak-design-stand-wallet/IMG_3976.jpeg", "https://outriders.fra1.digitaloceanspaces.com/roko8/peak-design-stand-wallet/IMG_8748%202.jpeg", "https://outriders.fra1.digitaloceanspaces.com/roko8/peak-design-stand-wallet/IMG_8748.jpeg", "https://outriders.fra1.digitaloceanspaces.com/roko8/peak-design-stand-wallet/IMG_8749%202.jpeg"],
+      photos: ["https://outriders.fra1.digitaloceanspaces.com/roko8/peak-design-stand-wallet/IMG_3975.jpeg", "https://outriders.fra1.digitaloceanspaces.com/roko8/peak-design-stand-wallet/IMG_3976.jpeg", "https://outriders.fra1.digitaloceanspaces.com/roko8/peak-design-stand-wallet/IMG_8748%202.jpeg", "https://outriders.fra1.digitaloceanspaces.com/roko8/peak-design-stand-wallet/IMG_8748.jpeg", "https://outriders.fra1.digitaloceanspaces.com/roko8/peak-design-stand-wallet/IMG_8749%202.jpeg", "https://outriders.fra1.digitaloceanspaces.com/roko8/peak-design-stand-wallet/IMG_8749.jpeg"],
       descriptionMd: "Sprzedam Peak Design Mobile Stand Wallet — magnetyczny portfel/podstawka na telefon. Nowy, w oryginalnym pudełku, nieużywany.\n\n**Model:** Peak Design Mobile Stand Wallet\n**Kolor:** Charcoal (grafitowy)\n**Stan:** nowy, w pudełku\n\n**Specyfikacja techniczna:**\n– Magnetyczny portfel na 1–3 karty + gotówkę\n– Wbudowana podstawka (stand) — poziomo i pionowo\n– Technologia SlimLink™ i MagSafe compatible\n– Materiał: weatherproof woven nylon\n– Ultra-slim — minimalna grubość\n– Kompatybilny z: Peak Design Mobile Cases, iPhone MagSafe, Samsung, Google\n– Wymaga: etui Peak Design lub adaptera Universal Adapter\n\nOdbiór osobisty w Warszawie (Wola/Śródmieście). Wysyłka możliwa.",
     },
     {
@@ -626,7 +638,7 @@ export const sections: OfferSection[] = [
       hasInvoice: false,
       liveOnOlx: false,
       olxUrl: null,
-      photos: ["https://outriders.fra1.digitaloceanspaces.com/roko8/peak-design-universal-adapter/IMG_3973.jpeg", "https://outriders.fra1.digitaloceanspaces.com/roko8/peak-design-universal-adapter/IMG_3974.jpeg", "https://outriders.fra1.digitaloceanspaces.com/roko8/peak-design-universal-adapter/IMG_8750%202.jpeg", "https://outriders.fra1.digitaloceanspaces.com/roko8/peak-design-universal-adapter/IMG_8751%202.jpeg", "https://outriders.fra1.digitaloceanspaces.com/roko8/peak-design-universal-adapter/IMG_8751.jpeg"],
+      photos: ["https://outriders.fra1.digitaloceanspaces.com/roko8/peak-design-universal-adapter/IMG_3973.jpeg", "https://outriders.fra1.digitaloceanspaces.com/roko8/peak-design-universal-adapter/IMG_3974.jpeg", "https://outriders.fra1.digitaloceanspaces.com/roko8/peak-design-universal-adapter/IMG_8750%202.jpeg", "https://outriders.fra1.digitaloceanspaces.com/roko8/peak-design-universal-adapter/IMG_8750.jpeg", "https://outriders.fra1.digitaloceanspaces.com/roko8/peak-design-universal-adapter/IMG_8751%202.jpeg", "https://outriders.fra1.digitaloceanspaces.com/roko8/peak-design-universal-adapter/IMG_8751.jpeg"],
       descriptionMd: "Sprzedam Peak Design Mobile Universal Adapter — adapter pozwalający montować każdy telefon (bez etui Peak Design) w systemie Peak Design. Nowy, w oryginalnym opakowaniu, nieużywany.\n\n**Model:** Peak Design Mobile Universal Adapter\n**Kolor:** Charcoal (grafitowy)\n**Stan:** nowy, w opakowaniu\n\n**Specyfikacja techniczna:**\n– Przyklejany adapter (3M adhesive) do telefonu lub etui dowolnej marki\n– Umożliwia użycie wszystkich uchwytów Peak Design (Bar Mount, car mount, wall mount, tripod)\n– MagSafe compatible\n– Technologia SlimLink™\n– Materiał: weatherproof woven nylon\n– Gwarancja dożywotnia (Guaranteed for Life)\n– Pasuje do: iPhone, Samsung, Google Pixel, każdy telefon z płaskim tyłem\n\nOdbiór osobisty w Warszawie (Wola/Śródmieście). Wysyłka możliwa.",
     },
     {
@@ -638,7 +650,7 @@ export const sections: OfferSection[] = [
       hasInvoice: false,
       liveOnOlx: false,
       olxUrl: null,
-      photos: ["https://outriders.fra1.digitaloceanspaces.com/roko8/uchwyty-tablet-barkan-nedis/IMG_8728%202.jpeg", "https://outriders.fra1.digitaloceanspaces.com/roko8/uchwyty-tablet-barkan-nedis/IMG_8729%202.jpeg", "https://outriders.fra1.digitaloceanspaces.com/roko8/uchwyty-tablet-barkan-nedis/IMG_8729.jpeg", "https://outriders.fra1.digitaloceanspaces.com/roko8/uchwyty-tablet-barkan-nedis/IMG_8730%202.jpeg", "https://outriders.fra1.digitaloceanspaces.com/roko8/uchwyty-tablet-barkan-nedis/IMG_8730.jpeg", "https://outriders.fra1.digitaloceanspaces.com/roko8/uchwyty-tablet-barkan-nedis/IMG_8731%202.jpeg"],
+      photos: ["https://outriders.fra1.digitaloceanspaces.com/roko8/uchwyty-tablet-barkan-nedis/IMG_8728%202.jpeg", "https://outriders.fra1.digitaloceanspaces.com/roko8/uchwyty-tablet-barkan-nedis/IMG_8729%202.jpeg", "https://outriders.fra1.digitaloceanspaces.com/roko8/uchwyty-tablet-barkan-nedis/IMG_8729.jpeg", "https://outriders.fra1.digitaloceanspaces.com/roko8/uchwyty-tablet-barkan-nedis/IMG_8730%202.jpeg", "https://outriders.fra1.digitaloceanspaces.com/roko8/uchwyty-tablet-barkan-nedis/IMG_8730.jpeg", "https://outriders.fra1.digitaloceanspaces.com/roko8/uchwyty-tablet-barkan-nedis/IMG_8731%202.jpeg", "https://outriders.fra1.digitaloceanspaces.com/roko8/uchwyty-tablet-barkan-nedis/IMG_8731.jpeg"],
       descriptionMd: "Sprzedam 2 uchwyty ścienne na tablet, oba nowe w oryginalnych pudełkach. Pasują do tabletów 7–12\".\n\n**Zestaw zawiera:**\n\n**1. Barkan Premium 360° Rotation Tablet Wall Mount**\n– Tablety: 7\"–12\", do 1,4 kg\n– Obrót: 360°, tryb poziomy i pionowy\n– Auto-clamp (zacisk automatyczny)\n– Kolor: biały\n\n**2. Nedis Tablet Wall Mount TWMT100SI** (Fixed)\n– Tablety: 7\"–12\", do 1 kg\n– Montaż stały (fixed), kąt 360°\n– Kolor: biały/srebrny\n\nOba produkty nowe, nieużywane, w oryginalnych pudełkach.\n\nOdbiór osobisty w Warszawie (Wola/Śródmieście). Wysyłka możliwa.",
     },
     {
@@ -650,7 +662,7 @@ export const sections: OfferSection[] = [
       hasInvoice: false,
       liveOnOlx: false,
       olxUrl: null,
-      photos: ["https://outriders.fra1.digitaloceanspaces.com/roko8/purelink-benchmark-hdmi/IMG_8805%202.jpeg", "https://outriders.fra1.digitaloceanspaces.com/roko8/purelink-benchmark-hdmi/IMG_8806%202.jpeg"],
+      photos: ["https://outriders.fra1.digitaloceanspaces.com/roko8/purelink-benchmark-hdmi/IMG_8805%202.jpeg", "https://outriders.fra1.digitaloceanspaces.com/roko8/purelink-benchmark-hdmi/IMG_8806%202.jpeg", "https://outriders.fra1.digitaloceanspaces.com/roko8/purelink-benchmark-hdmi/IMG_8806.jpeg"],
       descriptionMd: "Sprzedam kabel HDMI PureLink serii Benchmark / PureInstall — przeznaczony do profesjonalnych instalacji AV. Nowy, w oryginalnym zafoliowanym opakowaniu, nieużywany.\n\n**Marka:** PureLink\n**Seria:** Benchmark / PureInstall — For Professional Installations\n**Stan:** nowy, zafoliowany\n\n**Specyfikacja techniczna:**\n– Premium High Speed HDMI z Ethernet\n– Certyfikowana jakość (seria PureInstall)\n– Dedykowany do instalacji stałych i integratorów AV\n– Złącza gold-plated, wielowarstwowe ekranowanie\n– Kompatybilny z 4K UHD, HDR\n\nOdbiór osobisty w Warszawie (Wola/Śródmieście). Wysyłka możliwa.",
     },
     {
@@ -674,7 +686,7 @@ export const sections: OfferSection[] = [
       hasInvoice: false,
       liveOnOlx: false,
       olxUrl: null,
-      photos: ["https://outriders.fra1.digitaloceanspaces.com/roko8/zeskit-maya-hdmi/IMG_8803%202.jpeg", "https://outriders.fra1.digitaloceanspaces.com/roko8/zeskit-maya-hdmi/IMG_8803.jpeg", "https://outriders.fra1.digitaloceanspaces.com/roko8/zeskit-maya-hdmi/IMG_8804%202.jpeg"],
+      photos: ["https://outriders.fra1.digitaloceanspaces.com/roko8/zeskit-maya-hdmi/IMG_8803%202.jpeg", "https://outriders.fra1.digitaloceanspaces.com/roko8/zeskit-maya-hdmi/IMG_8803.jpeg", "https://outriders.fra1.digitaloceanspaces.com/roko8/zeskit-maya-hdmi/IMG_8804%202.jpeg", "https://outriders.fra1.digitaloceanspaces.com/roko8/zeskit-maya-hdmi/IMG_8804.jpeg"],
       descriptionMd: "Sprzedam kabel HDMI 2.1 Zeskit Maya — certyfikowany Ultra High Speed. Stan idealny, praktycznie nieużywany. Zakup z fakturą VAT.\n\n**Model:** Zeskit Maya Ultra High Speed HDMI Cable\n**Standard:** HDMI 2.1, 48 Gbps\n**Stan:** jak nowy — sprawny\n\n**Specyfikacja techniczna:**\n– HDMI 2.1 Certified Ultra High Speed (hologram certyfikatu na kablu)\n– Przepustowość: 48 Gbps\n– Rozdzielczość: 8K@60Hz, 4K@120Hz, 10K\n– Obsługa: Dynamic HDR, eARC, ALLM, VRR, QFT, QMS\n– Złocone złącza, potrójny ekran, pleciony kabel\n– Zgodny z PS5, Xbox Series X, Apple TV 4K, Sony/LG/Samsung\n\nOdbiór osobisty w Warszawie (Wola/Śródmieście). Wysyłka możliwa.",
     },
     {
