@@ -49,7 +49,7 @@ export const sections: OfferSection[] = [
       slug: "sony-xr-75z9j",
       name: "Telewizor Sony BRAVIA XR-75Z9J (75\", 8K Full Array LED)",
       qty: 1,
-      price: 19200,
+      price: 13000,
       category: "Elektronika → Telewizory i Monitory → Telewizory",
       hasInvoice: false,
       liveOnOlx: true,
