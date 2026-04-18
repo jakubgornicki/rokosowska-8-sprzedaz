@@ -350,18 +350,6 @@ export const sections: OfferSection[] = [
       descriptionMd: "Sprzedam kapsułę mikrofonową Zoom XYH-6 (Mid-Side stereo) do nagrań ambientowych i reporterskich. Sprawna, w bardzo dobrym stanie.\n\n**Model:** Zoom XYH-6 Mid-Side Stereo Microphone Capsule\n**Stan:** używana, b. dobry — sprawna\n\n**Specyfikacja techniczna:**\n– Typ: Mid-Side (M-S) stereo\n– Kompatybilność: Zoom H5, H6, Q8, U-44, F1, F4, F8, F8n\n– Regulacja szerokości pola stereo (wąskie / szerokie)\n– Pozwala na zmianę szerokości stereo podczas post-produkcji\n– Złącze: dedykowane Zoom (XY capsule slot)\n– Dwa elementy kapsułowe: mikrofon kardioidalny (Mid) + bibidirektywny (Side)\n\nIdealna do nagrań terenowych, filmowania, konferencji, ENG, wywiadów.\n\nOdbiór osobisty w Warszawie (Wola/Śródmieście). Wysyłka możliwa.",
     },
     {
-      slug: "wiim-pro-plus",
-      name: "WiiM Pro Plus (streamer sieciowy, AirPlay 2, HDMI)",
-      qty: 1,
-      price: 750,
-      category: "Elektronika → Muzyka i Nagłośnienie → Odtwarzacze sieciowe",
-      hasInvoice: false,
-      liveOnOlx: true,
-      olxUrl: "https://www.olx.pl/d/oferta/wiim-pro-plus-streamer-sieciowy-airplay-hdmi-jak-nowy-CID99-ID1afB8o.html",
-      photos: ["https://outriders.fra1.digitaloceanspaces.com/roko8/wiim-pro-plus/IMG_3961.jpeg", "https://outriders.fra1.digitaloceanspaces.com/roko8/wiim-pro-plus/IMG_3962.jpeg", "https://outriders.fra1.digitaloceanspaces.com/roko8/wiim-pro-plus/IMG_3963.jpeg"],
-      descriptionMd: "Sprzedam WiiM Pro Plus — sieciowy odtwarzacz strumieniowy z wyjściem HDMI i wyjściem analogowym (RCA). Sprawny, w bardzo dobrym stanie.\n\n**Model:** WiiM Pro Plus\n**Stan:** używany, b. dobry — sprawny\n\n**Specyfikacja techniczna:**\n– Wyjścia: HDMI (PCM/Atmos), RCA (stereo analog), optyczne (TOSLINK), koaksjalne\n– Wejście: RCA (analog IN)\n– Przetwornik C/A: ES9038Q2M (Stereo DAC)\n– Obsługiwane protokoły: AirPlay 2, Chromecast, DLNA, Spotify Connect, Tidal Connect, Amazon Music\n– Serwisy: Spotify, Tidal, Amazon Music, Deezer, Qobuz, TuneIn i inne\n– Wi-Fi: 2.4 / 5 GHz, Bluetooth 5.0\n– Pilzot: tak (dołączony)\n\nIdealne wzmocnienie dla systemów stereo bez smartfona — AirPlay 2 multiroom.\n\nOdbiór osobisty w Warszawie (Wola/Śródmieście). Wysyłka możliwa.",
-    },
-    {
       slug: "power-dynamics-ncss8",
       name: "Power Dynamics NCSS8 — splitter sygnału audio 8-kanałowy",
       qty: 1,
@@ -529,18 +517,6 @@ export const sections: OfferSection[] = [
     title: "Monitoring / Kamery dodatkowe",
     color: "#0A3F70",
     items: [
-    {
-      slug: "insta360-x3",
-      name: "Kamera Insta360 X3 (360°, 5.7K)",
-      qty: 1,
-      price: 700,
-      category: "Elektronika → Foto i Wideo → Kamery sportowe",
-      hasInvoice: false,
-      liveOnOlx: true,
-      olxUrl: "https://www.olx.pl/d/oferta/kamera-insta360-x3-360-5-7k-CID99-ID1afzKL.html",
-      photos: ["https://outriders.fra1.digitaloceanspaces.com/roko8/insta360-x3/IMG_9007.jpeg", "https://outriders.fra1.digitaloceanspaces.com/roko8/insta360-x3/IMG_9008.jpeg", "https://outriders.fra1.digitaloceanspaces.com/roko8/insta360-x3/IMG_9009.jpeg", "https://outriders.fra1.digitaloceanspaces.com/roko8/insta360-x3/IMG_9010.jpeg", "https://outriders.fra1.digitaloceanspaces.com/roko8/insta360-x3/IMG_9011.jpeg", "https://outriders.fra1.digitaloceanspaces.com/roko8/insta360-x3/IMG_9012.jpeg"],
-      descriptionMd: "Sprzedam kamerę 360° Insta360 X3. Sprawna, w bardzo dobrym stanie. Bez wyraźnych śladów użytkowania.\n\n**Model:** Insta360 X3\n**Stan:** używana, b. dobry — sprawna\n\n**Specyfikacja techniczna:**\n– Rozdzielczość wideo: 5.7K 360° (do 5760×2880 @ 30fps)\n– Tryb Steady Cam: 4K Single Lens\n– Zdjęcia: 72 Mpix (360°) / 18 Mpix (pojedynczy obiektyw)\n– Ekran dotykowy: 2,29\"\n– Wodoodporność: do 10 m (bez obudowy)\n– Stabilizacja: FlowState (6-axis gyroscope)\n– Czas nagrywania: ok. 81 min (4K @30fps)\n– Łączność: Bluetooth 5.0, Wi-Fi 5GHz\n– Wejście: USB-C, microSD (do 1TB)\n\nOdbiór osobisty w Warszawie (Wola/Śródmieście). Wysyłka możliwa.",
-    },
     {
       slug: "reolink-junction-box-d20",
       name: "Reolink Junction Box D20 (puszka montażowa)",
