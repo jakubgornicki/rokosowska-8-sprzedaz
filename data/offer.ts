@@ -794,18 +794,6 @@ export const sections: OfferSection[] = [
       descriptionMd: "Sprzedam hokery barowe ASTER w kolorze miedzianym (welur), na czarnej metalowej nodze. Używane, stan bardzo dobry, bez uszkodzeń i zabrudzeń.\n\n**Model:** Hoker barowy ASTER (Mebel-Partner)\n**Kolor:** miedziany welur / czarna noga\n**Stan:** używane, b. dobry — jak nowe\n**Ilość dostępna:** 4 szt. (możliwość zakupu 1, 2 lub wszystkich 4)\n\n**Opis produktu:**\n– Siedzisko i oparcie tapicerowane welurem w kolorze miedzianym\n– Oparcie z charakterystycznym plecionym wzorem\n– Regulacja wysokości siedziska (zakres ~22 cm)\n– Obrotowe siedzisko 360°\n– Stalowa noga malowana proszkowo na czarno + podnóżek\n– Podstawa typu talerz — stabilna\n\n**Wymiary:** ok. 60–82 cm wysokość siedziska, szerokość ok. 50 cm\n\nIdealne do kuchni z wyspą, baru domowego, restauracji, bistro.\n\nZakupione nowe w listopadzie 2025 r. (faktura VAT dostępna).\n\nOdbiór osobisty w Warszawie (Wola/Śródmieście). Wysyłka możliwa — staranne pakowanie.",
     },
     {
-      slug: "stolik-kawiarniany-60x60",
-      name: "Stolik kawiarniany 60×60 cm dąb lefkas, noga czarna",
-      qty: 4,
-      price: 170,
-      category: "Dom i Ogród → Meble → Stoły i krzesła",
-      hasInvoice: true,
-      liveOnOlx: true,
-      olxUrl: "https://www.olx.pl/d/oferta/stolik-kawiarniany-60x60-dab-lefkas-noga-czarna-metal-nowy-CID628-ID1a6LUX.html",
-      photos: ["https://outriders.fra1.digitaloceanspaces.com/roko8/stolik-kawiarniany-60x60/IMG_8798%202.jpeg", "https://outriders.fra1.digitaloceanspaces.com/roko8/stolik-kawiarniany-60x60/IMG_8798.jpeg", "https://outriders.fra1.digitaloceanspaces.com/roko8/stolik-kawiarniany-60x60/IMG_8799%202.jpeg", "https://outriders.fra1.digitaloceanspaces.com/roko8/stolik-kawiarniany-60x60/IMG_8799.jpeg", "https://outriders.fra1.digitaloceanspaces.com/roko8/stolik-kawiarniany-60x60/IMG_8800%202.jpeg", "https://outriders.fra1.digitaloceanspaces.com/roko8/stolik-kawiarniany-60x60/IMG_8800.jpeg", "https://outriders.fra1.digitaloceanspaces.com/roko8/stolik-kawiarniany-60x60/IMG_8801%202.jpeg", "https://outriders.fra1.digitaloceanspaces.com/roko8/stolik-kawiarniany-60x60/IMG_8801.jpeg", "https://outriders.fra1.digitaloceanspaces.com/roko8/stolik-kawiarniany-60x60/IMG_8802%202.jpeg", "https://outriders.fra1.digitaloceanspaces.com/roko8/stolik-kawiarniany-60x60/IMG_8802.jpeg"],
-      descriptionMd: "Sprzedam stolik kawiarniany/restauracyjny z kwadratowym blatem. Nowy, nieużywany.\n\n**Typ:** stolik kawiarniany/restauracyjny\n**Blat:** 60×60 cm, grubość 18 mm, laminat dąb lefkas\n**Noga:** metalowa, kolor czarny (Typ 1566: Czarny)\n**Kod producenta:** 1566\n**Stan:** nowy\n\n**Cechy:**\n- Masywna, stabilna konstrukcja\n- Blat laminowany odporny na zarysowania i wilgoć\n- Noga metalowa malowana proszkowo\n- Idealny do kawiarni, restauracji, baru, biura lub domu\n\nMożliwy zakup kilku sztuk (dostępna większa ilość).\n\nOdbiór osobisty w Warszawie (Wola/Śródmieście). Wysyłka możliwa po uzgodnieniu.",
-    },
-    {
       slug: "krzeslo-uno-czarne",
       name: "Krzesło ażurowe czarne UNO z podłokietnikami",
       qty: 30,
